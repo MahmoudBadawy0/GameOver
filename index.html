@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameOver</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+
+  <section id="games" class="d-block">
+    <header>
+      <img class="w-100" src="./img/wraper.png" alt="game">
+    </header>
+
+    <nav class="col-md-6 col-lg-10 mx-auto navbar navbar-expand-lg  position-sticky z-3 top-0">
+      <div class="container">
+        <h1 class="navbar-brand fs-4 d-flex justify-content-center align-items-center m-0 ">
+          <img class="me-1" src="./img/logo-sm.png" width="40" alt="logo">
+          Game Reviews
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="categoriesLinks" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" data-category="mmorpg" href="#">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="shooter" href="#">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="sailing" href="#">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="permadeath" href="#">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="superhero" href="#">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="pixel" href="#">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="my-5">
+      <section>
+        <div class="container">
+          <div id="gamesData" class="row g-4">
+
+
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </section>
+
+
+  <section id="details" class="d-none my-3 ht">
+
+    <div class="container py-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mb-3">Details Game</h2>
+        <span class="close-span"><i id="closeDetails" class="fa fa-xmark fa-xl  cursor-pointer"></i></span>
+      </div>
+      <div id="gameDetails" class="row g-4">
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="loading" class="loading d-none align-items-center justify-content-center">
+    <span class="loader"></span>
+  </div>
+
+
+  <footer class="bg-dark text-light text-center py-3">
+    <p class="m-0">
+      &copy; 2024 Game Reviews (Mahmoud Badawy)
+    </p>
+  </footer>
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive, "Comic Sans MS", "Comic Sans";
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #272b30;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+.ht {
+  min-height: 90vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#closeDetails {
+  color: rgb(108, 117, 125);
+  transition: 0.3s;
+}
+#closeDetails:hover {
+  color: #fff;
+}
+
+.card{
+  filter: grayscale(75%);
+  transition: .2s;
+}
+.card:hover{
+  filter: grayscale(0%);
+}
+
+nav {
+  background-color: rgb(58, 73, 123) !important;
+  margin-top: -30px;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+nav .nav-link {
+  transition: 0.5s;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav .navbar-brand {
+  font-family: cursive, "Comic Sans MS", "Comic Sans";
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+nav .nav-link {
+  font-size: 0.9375rem;
+}
+
+#games nav .nav-link.active,
+#games nav .nav-link:hover {
+  color: #09c;
+}
+
+.loading {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
